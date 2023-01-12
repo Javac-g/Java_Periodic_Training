@@ -3,7 +3,7 @@ package Multithreading.Synchro;
 public class Caller implements Runnable{
     Thread t;
     String msg;
-    Call target;
+    final Call target;
 
     public Caller(Call target,String msg){
         this.target = target;
@@ -14,6 +14,8 @@ public class Caller implements Runnable{
     }
     public void run(){
 
-           target.calling(msg);
+           synchronized (target){
+               target.calling(msg);
+           }
     }
 }
