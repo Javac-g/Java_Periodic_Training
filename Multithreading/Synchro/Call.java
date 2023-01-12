@@ -1,7 +1,7 @@
 package Multithreading.Synchro;
 
 public class Call {
-    public void calling(String msg){
+    public synchronized void calling(String msg){
 
         try{
             System.out.print("[" + msg);
