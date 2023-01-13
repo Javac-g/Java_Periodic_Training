@@ -11,17 +11,28 @@ public class One implements Runnable{
         t.start();
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public Thread getT() {
+        return t;
+    }
+
     @Override
     public void run(){
-        for (int i = 5; i > 0 ; i--){
+
             try {
-                System.out.println(name + ": " + i);
-                Thread.sleep(1000);
+                for (int i = 5;i > 0;i--){
+                    System.out.println(name + ": " + i);
+                    Thread.sleep(1000);
+                }
+
             }catch (InterruptedException e){
                 e.printStackTrace();
             }finally {
                 System.out.println(name + ": finished");
             }
-        }
+
     }
 }
