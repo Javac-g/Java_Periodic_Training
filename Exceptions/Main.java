@@ -1,7 +1,19 @@
 package Exceptions;
 
 public class Main {
-    public static void main(String...args){
-
+    public static void myMethod() throws MyExA{
+        for (int i = 5; i > 0;i--){
+            if (i ==2){
+                throw new MyExA("Got point: " +  i);
+            }
+            System.out.println("Point: " + i);
+        }
+    }
+    public static void main(String...args) throws MyExA {
+        try{
+            myMethod();
+        }catch (MyExA e){
+            myMethod();
+        }
     }
 }
