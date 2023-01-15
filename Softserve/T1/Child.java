@@ -6,7 +6,9 @@ public class Child extends Person{
         super(name, healthInfo, age);
         this.childId = childId;
     }
-    public String getHelthInfo(){
+
+    @Override
+    public String getHealthInfo(){
         return healthInfo;
     }
 }

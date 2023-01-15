@@ -1,6 +1,6 @@
 package Softserve.T1;
 
-public class Person {
+public abstract class Person {
     protected String name;
     protected String healthInfo;
     protected int childId,age,passportNumber;
@@ -17,4 +17,5 @@ public class Person {
         this.age = age;
         this.passportNumber = passportNumber;
     }
+    public abstract String getHealthInfo();
 }
