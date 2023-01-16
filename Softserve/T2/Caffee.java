@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Caffee implements DrinkReceipt, DrinkPreparation,Rating{
-    private String name;
-    private int rating;
-    private  Map<String,Integer> ingredients = new HashMap<>();
+    protected String name;
+    protected int rating;
+    protected   Map<String,Integer> ingredients = new HashMap<>();
 
     public Caffee(String name, int rating) {
         this.name = name;
