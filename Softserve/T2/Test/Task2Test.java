@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Task2Test {
 
-    final private static String PACKAGE = "Softserve.T2.V1.";
+    final private static String PACKAGE = "Softserve.T2.V2.";
 
 
     @DisplayName("Check that Classes is present")
