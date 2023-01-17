@@ -12,19 +12,21 @@ public abstract class Coffee implements DrinkReceipt,DrinkPreparation,Rating {
         this.name = name;
         this.rating = rating;
     }
-
+    public Map<String, Integer> getIngridients() {
+        return ingridients;
+    }
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public int getRating() {
         return rating;
     }
 
-    public Map<String, Integer> getIngridients() {
-        return ingridients;
-    }
 
+    @Override
     public  DrinkReceipt addComponent(String name,int count){
         ingridients.put(name,count);
         return this;
