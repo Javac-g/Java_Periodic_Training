@@ -1,9 +1,9 @@
 package Softserve.T2.Test;
 
-import Softserve.T2.Caffee;
-import Softserve.T2.Cappuccino;
-import Softserve.T2.Espresso;
-import Softserve.T2.Main;
+import Softserve.T2.V1.Caffee;
+import Softserve.T2.V1.Cappuccino;
+import Softserve.T2.V1.Espresso;
+import Softserve.T2.V1.Main;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Task2Test {
 
-    final private static String PACKAGE = "Softserve.T2.";
+    final private static String PACKAGE = "Softserve.T2.V1.";
 
 
     @DisplayName("Check that Classes is present")

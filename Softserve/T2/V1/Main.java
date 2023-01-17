@@ -1,4 +1,4 @@
-package Softserve.T2;
+package Softserve.T2.V1;
 
 import java.util.List;
 import java.util.Map;
