@@ -19,6 +19,10 @@ public abstract class Coffee implements DrinkReceipt,DrinkPreparation,Rating {
         return rating;
     }
 
+    public Map<String, Integer> getIngridients() {
+        return ingridients;
+    }
+
     @Override
     public String getName() {
         return name;
@@ -26,7 +30,10 @@ public abstract class Coffee implements DrinkReceipt,DrinkPreparation,Rating {
 
 
     @Override
-    public abstract DrinkReceipt addComponent(String componentName, int componentCount);
+    public DrinkReceipt addComponent(String componentName, int componentCount) {
+        ingridients.put(componentName,componentCount);
+        return this;
+    }
 
     @Override
     public abstract Map<String, Integer> makeDrink();
