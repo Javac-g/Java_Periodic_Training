@@ -4,6 +4,6 @@ import java.util.Map;
 
 public interface DrinkPreparation {
 
-    Map<String,int> makeDrink();
+    Map<String,Integer> makeDrink();
 
 }
