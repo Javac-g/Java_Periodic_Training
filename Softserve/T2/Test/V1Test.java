@@ -16,9 +16,9 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class Task2Test {
+class V1Test {
 
-    final private static String PACKAGE = "Softserve.T2.V2.";
+    final private static String PACKAGE = "Softserve.T2.V1.";
 
 
     @DisplayName("Check that Classes is present")
